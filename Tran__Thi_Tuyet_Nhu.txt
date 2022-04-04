@@ -1,0 +1,21 @@
+1.
+
+<?php 
+$b=array(5,6,5,8,4,2,51,73,72); //array of integer numbers
+$tong_le=0; //sum of odd numbers
+$tong_chan=0;//sum of even numbers
+foreach($b as $tinhtong)
+{
+if($tinhtong%2==0)
+$tong_chan+=$tinhtong;
+else $tong_le+=$tinhtong;
+}
+echo "Sum of even numbers : ".$tong_chan;
+echo "\nSum of odd numbers : ".$tong_le;
+?>
+
+2.
+SELECT student_id,student_name
+FROM student
+WHERE student_id NOT IN (SELECT student_id FROM course_register)
+ORDER BY student_name
