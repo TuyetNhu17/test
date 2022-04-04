@@ -1,17 +1,14 @@
 1.
-
 <?php 
-$b=array(5,6,5,8,4,2,51,73,72); //array of integer numbers
-$tong_le=0; //sum of odd numbers
-$tong_chan=0;//sum of even numbers
-foreach($b as $tinhtong)
-{
-if($tinhtong%2==0)
-$tong_chan+=$tinhtong;
-else $tong_le+=$tinhtong;
+function sumEven($b){
+    $sumOfEven=0;
+foreach($b as $sum){
+    if($sum%2==0){
+        $sumOfEven+=$sum;
+    }
 }
-echo "Sum of even numbers : ".$tong_chan;
-echo "\nSum of odd numbers : ".$tong_le;
+return $sumOfEven;
+}
 ?>
 
 2.
